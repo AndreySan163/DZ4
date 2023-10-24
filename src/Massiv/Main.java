@@ -5,16 +5,17 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         int[] array = new int[50];
-        Random random = new Random();
-
-
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(101) - 50;
+            array[i] = (int) (Math.random() + 101 - 50);
+            System.out.print(array[i] + " ");
         }
 
-
-        int colOtrElem = 0, colPolElem = 0, colNull = 0, sumPolElem = 0, sumOtrElem = 0, sum = 0;
-
+        int colOtrElem = 0,
+            colPolElem = 0,
+            colNull = 0,
+            sumPolElem = 0,
+            sumOtrElem = 0,
+            sum = 0;
 
         for (int num : array) {
 
@@ -31,7 +32,6 @@ public class Main {
             else {
                 colNull++;
             }
-
 
             sum += num;
         }
