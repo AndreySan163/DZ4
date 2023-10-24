@@ -12,20 +12,45 @@ public class Main {
         System.out.print("Введите второе целое число: ");
         int b = scanner.nextInt();
         System.out.print("Введите число от 1 до 4: ");
-        int f = scanner.nextInt();
+        int d = scanner.nextInt();
+        scanner.close();
 
-        if (f == 1) {
-            int c1 = a + b;
-            System.out.println("Сумма : " + c1);
-        } else if (f == 2) {
-            int c2 = a - b;
-            System.out.println("Разность : " + c2);
-        } else if (f == 3) {
-            int c3 = a * b;
-            System.out.println("Произведение : " + c3);
-        } else{
-            int c4 = a / b;
-            System.out.println("Частное : " + c4);
+        /*switch (d){
+            case  1:
+                System.out.println("Сумма : " + (a + b));
+                break;
+            case 2:
+                System.out.println("Разность : " + (a - b));
+                break;
+            case 3:
+                System.out.println("Произведение : " + (a * b));
+                break;
+            case 4:
+                if (d == 0) {
+                    System.out.println("DEL 0");
+                    break;
+                }
+                System.out.println("Частное : " + ((double) a / b));
+                break;
+
+                default:
+                System.out.println("ERROR");
+        }*/
+
+        if (d == 1) {
+            System.out.println("Сумма : " + (a + b));
+
+        } else if (d == 2) {
+            System.out.println("Разность : " + (a - b));
+
+        } else if (d == 3) {
+            System.out.println("Произведение : " + (a * b));
+
+        } else if (d == 4){
+            System.out.println("Частное : " + ((double) a / b));
+
+        }else {
+            System.out.println("ERROR");
         }
 
 
